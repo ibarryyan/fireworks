@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||某|某|祝|你|生|日|快|乐|#rectangle|');
+      S.UI.simulate('|#countdown 3|闫|同|学|祝|你|新|年|快|乐|wx:扯编程的淡');
     }
 
     S.Drawing.loop(function () {
@@ -697,7 +697,7 @@ S.Shape = (function () {
           dots[i].move(new S.Point({
             x: Math.random() * a.w,
             y: Math.random() * a.h,
-            a: 0.3, //.4
+            a: 0.4, //.4
             z: Math.random() * 4,
             h: 0
           }));
